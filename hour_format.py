@@ -74,7 +74,7 @@ class Hours(tk.Tk):
             s.delete(len(s.get())-1, tk.END)
         if event.keysym=="BackSpace":
             return
-        
+
         # check the hour format and add : between hours and minutes
         if len(s.get()) == 1 and int(s.get()) > 1:
             s.insert(0, "0")
@@ -90,6 +90,7 @@ def main():
     app = Hours()
     app.mainloop()
 
+    
 if __name__ == '__main__':
     main()
 else:
